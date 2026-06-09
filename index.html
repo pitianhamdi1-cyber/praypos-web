@@ -5,23 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PRAY-POS</title>
   <style>
-    body { font-family: Arial, sans-serif; background:#f5f0e6; margin:0; }
-    header, footer { background:#5C3D2E; color:white; text-align:center; padding:20px; }
-    section { max-width:800px; margin:auto; padding:40px; }
-    h1, h2 { color:#5C3D2E; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f0e6, #fff);
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: #5C3D2E;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #5C3D2E;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #f5f0e6;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #5C3D2E;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .download-btn:hover {
+      background: #7a4f3a;
+    }
+    footer {
+      background: #5C3D2E;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
   <header>
-  <img src="logo.png" alt="PRAY-POS Logo" style="width:120px; margin-bottom:10px;">
-  <h1>PRAY-POS</h1>
-  <p>Setiap usaha harus dibarengi dengan doa</p>
-</header>
-
+    <img src="logo.png" alt="PRAY-POS Logo">
+    <p>Setiap usaha harus dibarengi dengan doa</p>
+  </header>
 
   <section>
     <h2>Apa itu PRAY-POS?</h2>
-    <p>PRAY-POS adalah aplikasi kasir modern untuk UMKM dan bisnis retail...</p>
+    <p>
+      PRAY-POS adalah aplikasi kasir modern yang membantu UMKM dan bisnis retail
+      mengelola transaksi, stok, laporan, dan administrasi dengan mudah.
+    </p>
 
     <h2>Fitur Utama</h2>
     <ul>
@@ -31,10 +86,5 @@
       <li>📦 Monitoring stok & resep bahan</li>
       <li>💳 Metode pembayaran tunai & QRIS</li>
     </ul>
-  </section>
 
-  <footer>
-    <p>&copy; 2026 PRAY-POS</p>
-  </footer>
-</body>
-</html>
+    <!-- 🔹 Tombol Download -->
