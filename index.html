@@ -16,21 +16,18 @@
       color: white;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* 🔹 kiri */
       gap: 15px;
-      padding: 15px 20px; /* 🔹 lebih kecil */
+      padding: 15px 20px;
     }
     header img {
-      width: 80px; /* 🔹 logo lebih kecil */
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
+      width: 80px;
     }
     header p {
       margin: 0;
-      font-size: 0.9rem;
-      opacity: 0.9;
+      font-size: 1.1rem; /* 🔹 lebih besar */
+      font-style: italic; /* 🔹 italic */
+      opacity: 0.95;
     }
     section {
       max-width: 900px;
@@ -60,6 +57,18 @@
       transition: 0.3s;
     }
     .download-btn:hover { background: #7a4f3a; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
     footer {
       background: #5C3D2E;
       color: white;
@@ -73,9 +82,7 @@
 <body>
   <header>
     <img src="logo.png" alt="PRAY-POS Logo">
-    <div>
-      <p>Setiap usaha harus dibarengi dengan doa</p>
-    </div>
+    <p>Setiap usaha harus dibarengi dengan doa</p>
   </header>
 
   <section>
@@ -97,6 +104,19 @@
     <!-- 🔹 Tombol Download -->
     <a href="https://drive.usercontent.google.com/download?id=1PBnpQ0UQRawvC-EEMwOz2Lq5ek3scBms&export=download&authuser=3&confirm=t&uuid=22110184-b5e3-42dc-94d3-be0c84747008&at=AAINaIImMRsMAQHgr0-oB9bVKojb%3A1781051784072" 
        class="download-btn">⬇️ Download Aplikasi</a>
+
+    <!-- 🔹 Galeri Screenshot -->
+    <h2>Tampilan Aplikasi</h2>
+    <div class="gallery">
+      <img src="1.jpg" alt="Screenshot 1">
+      <img src="2.jpg" alt="Screenshot 2">
+      <img src="3.jpg" alt="Screenshot 3">
+      <img src="4.jpg" alt="Screenshot 4">
+      <img src="5.jpg" alt="Screenshot 5">
+      <img src="6.jpg" alt="Screenshot 6">
+      <img src="7.jpg" alt="Screenshot 7">
+      <img src="8.jpg" alt="Screenshot 8">
+    </div>
   </section>
 
   <footer>
